@@ -1,7 +1,7 @@
 
-let site = document.getelementbyid("myinput")
+document.getElementById("button1").onclick = function(){
 
-//let site = window.prompt("site you want to about:blank", "https://");   
+let site = document.getElementById("myinput") 
 
 var urlObj = new window.URL(window.location.href);
 var url = site
