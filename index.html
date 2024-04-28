@@ -1,33 +1,18 @@
 <html>
-<head>
+
   <link rel="stylesheet" href="style.css">
 
-</head>
-
 <body>
-
-<div class="banner"></div>
-
-<h1>hello this is my first time using gihub to host so hopefully everything works</h1>
+  
 </body>
-<input id="myinput" type="text" placeholder="https://6.macao.net"></input>
-
-
-
-
-
-
 
 
 <button id="button1">press this button</button>
    
 <script>
-
-document.getElementById("button1").onclick = function(){
-
-let site = document.getElementById("myinput") 
-
-var urlObj = new window.URL(window.location.href);
+  let site = window.prompt("site you want to about:blank", "https://");
+  // document.getElementById("button1").onclick = function () {}  
+  var urlObj = new window.URL(window.location.href);
 var url = site
 if (url) {
   var win;
@@ -50,12 +35,6 @@ if (url) {
     document.querySelector('button').style.bacground = 'grey';
     document.querySelector('button').innerHTML = "Play Now";
   };
-}  
-   
-
-  
+} 
 </script>
-
-
-
 </html>
