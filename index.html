@@ -3,6 +3,7 @@
     <h1>v0.1</h1>
 </body>
 <button id="button1">press this button</button>
+    <input id="myinput" type="text">
     window.alert("if site selection does not appear on your screen refresh the page")
 <script>
   let site = window.prompt("site you want to about:blank", "https://");
@@ -12,6 +13,7 @@ if (url) {
   var win;
 
   document.querySelector('button').onclick = function() {
+      let site = document.getelementbyid("myinput")
     if (win) {
       win.focus();
     } else {
