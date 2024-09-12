@@ -1,28 +1,7 @@
 <html>
 <body>
-
-
-<button id="button1">press this button</button>
-<button onclick="window.open(shotgun.html)">shotgun test</button>
 <script>
-   function URLOPEN() {
-         let URL1 = 
-if (URL1) {
-      win = window.open();
-      win.document.body.style.margin = '0';
-      win.document.body.style.height = '100vh';
-      var iframe = win.document.createElement('iframe');
-      iframe.style.border = 'none';
-      iframe.style.width = '100%';
-      iframe.style.height = '100%';
-      iframe.style.margin = '0';
-      iframe.src = URL1 ;
-      win.document.body.appendChild(iframe);
-    }
-    document.querySelector('button').style.bacground = 'grey';
-    document.querySelector('button').innerHTML = "Play Now";
-  };
-}}
+ 
   let site = window.prompt("site you want to about:blank", "https://");
   var urlObj = new window.URL(window.location.href);
 var url = site
